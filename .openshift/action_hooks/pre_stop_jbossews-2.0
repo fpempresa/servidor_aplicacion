@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#logentries
+#killall python
+#killall logshifter
