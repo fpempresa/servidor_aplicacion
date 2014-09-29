@@ -2,7 +2,7 @@
 
 LOG_DIR=$OPENSHIFT_LOG_DIR
 
-export JAVA_OPTS="${JAVA_OPTS} -Duser.language=es -Duser.country=ES "
+export JAVA_OPTS_EXT="${JAVA_OPTS_EXT} -Duser.language=es -Duser.country=ES "
 
 
 cd $OPENSHIFT_REPO_DIR/.openshift/action_hooks/newrelic
