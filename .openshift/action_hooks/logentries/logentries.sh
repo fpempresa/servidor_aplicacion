@@ -3,6 +3,7 @@
 
 
 # Make sure the agent is an executable
+if [ "${LOGENTRIES_LICENSE_KEY}" != "" ]; then 
 PATH_LE=${OPENSHIFT_REPO_DIR}/.openshift/action_hooks/logentries
 cd ${PATH_LE}
 
@@ -23,3 +24,4 @@ ${PATH_LE}/le follow "${OPENSHIFT_LOG_DIR}/jbossews*" --name jbossews || true
 
 
 ${PATH_LE}/le monitordaemon
+fi
